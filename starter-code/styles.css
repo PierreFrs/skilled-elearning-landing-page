@@ -1,0 +1,111 @@
+/*general styles*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(131,134,154,.4) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 28px;
+}
+
+/*header styles*/
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header .button {
+    background-color: hsl(233, 54%, 16%);
+}
+
+.header .button:hover {
+    background-color: hsl(234, 25%, 52%);
+}
+
+/*main styles*/
+
+.landing-page {
+    padding: 1rem;
+}
+
+.visual {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: hsl(233, 54%, 16%);
+}
+
+.statement {
+    color: hsl(232, 10%, 56%);
+    line-height: 1.75;
+    margin-top: 1.5rem;
+}
+
+.visual .button {
+    margin-top: 1.5rem;
+    width: fit-content;
+    background: rgb(240,42,166);
+    background: linear-gradient(180deg, rgba(240,42,166,1) 0%, rgba(255,111,72,1) 100%);
+}
+
+.visual .button:hover {
+    background: rgb(237,129,197);
+    background: linear-gradient(180deg, rgba(237,129,197,1) 0%, rgba(255,159,134,1) 100%);
+}
+
+
+
+/*footer styles*/
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(233, 54%, 16%);
+    padding: 2.25rem 1rem;
+}
+
+.footer .button {
+    background-color: hsl(233, 54%, 16%);
+    background: rgb(72,81,255);
+    background: linear-gradient(180deg, rgba(72,81,255,1) 0%, rgba(240,42,166,1) 100%); 
+}
+
+.footer .button:hover {
+    background: rgb(126,133,255);
+    background: linear-gradient(180deg, rgba(126,133,255,1) 0%, rgba(238,105,189,1) 100%);
+}
