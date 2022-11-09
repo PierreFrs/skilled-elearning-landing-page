@@ -78,11 +78,20 @@ body {
     margin-top: 1.5rem;
 }
 
+.hero-container {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-image: url(./assets/image-hero-mobile.webp);
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
 .visual .button {
     margin-top: 1.5rem;
     width: fit-content;
-    background: rgb(240,42,166);
-    background: linear-gradient(180deg, rgba(240,42,166,1) 0%, rgba(255,111,72,1) 100%);
+    background: rgb(255,111,72,1);
+    background: linear-gradient(180deg, rgba(255,111,72,1) 0%, rgba(240,42,166,1) 100%);
 }
 
 .visual .button:hover {
@@ -102,8 +111,8 @@ body {
     font-size: 1.5rem;
     font-weight: 800;
     color: white;
-    background: rgb(240,42,166);
-    background: linear-gradient(180deg, rgba(240,42,166,1) 0%, rgba(255,111,72,1) 100%);
+    background: rgb(255,111,72,1);
+    background: linear-gradient(180deg, rgba(255,111,72,1) 0%, rgba(240,42,166,1) 100%);
     border-radius: 10px;
 }
 
@@ -161,4 +170,28 @@ body {
 .footer .button:hover {
     background: rgb(126,133,255);
     background: linear-gradient(180deg, rgba(126,133,255,1) 0%, rgba(238,105,189,1) 100%);
+}
+
+
+
+/* media */
+
+@media only screen and (min-width: 276px) {
+    .visual {
+        flex-direction: row;
+    }
+
+    .courses-gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .gallery-container,
+    .gallery-header {
+        max-width: 340px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+
 }
