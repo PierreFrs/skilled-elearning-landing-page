@@ -78,15 +78,6 @@ body {
     margin-top: 1.5rem;
 }
 
-.hero-container {
-    width: 100%;
-    aspect-ratio: 1/1;
-    background-image: url(./assets/image-hero-mobile.webp);
-    background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-
 .visual .button {
     margin-top: 1.5rem;
     width: fit-content;
@@ -97,6 +88,18 @@ body {
 .visual .button:hover {
     background: rgb(237,129,197);
     background: linear-gradient(180deg, rgba(237,129,197,1) 0%, rgba(255,159,134,1) 100%);
+}
+
+
+.hero-container {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-image: url(./assets/image-hero-mobile.webp);
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    margin: -1rem;
+    margin-top: 1.5rem;
 }
 
 .courses-gallery {
@@ -128,7 +131,7 @@ body {
 .logo {
     position: relative;
     width: 56px;
-    top: -1.75rem;
+    top: -56px;
     left: 1.75rem;
 }
 
@@ -136,7 +139,7 @@ body {
     font-size: 1.25rem;
     font-weight: 800;
     color:hsl(233, 54%, 16%);
-    margin-top: -.25rem;
+    margin-top: -2rem;
 }
 
 .gallery-container .paragraph {
@@ -176,22 +179,93 @@ body {
 
 /* media */
 
-@media only screen and (min-width: 276px) {
+@media only screen and (min-width: 376px) {
+    html {
+        font-size: 18px;
+    }
+    
+    .header {
+        padding: 1.5rem 2rem;
+        margin-bottom: -20%;
+    }
+
+    .landing-page {
+        padding: 0 2rem;
+    }
+    
     .visual {
         flex-direction: row;
+    }
+
+    .text {
+        margin-right: -35%;
+        margin-top: 20%;
+        max-width: 52%;
+        justify-content: center;
+    }
+
+    .hero-container {
+        background-image: url(./assets/image-hero-tablet.webp);
+        position: relative;
+        right: -35%;
     }
 
     .courses-gallery {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+        column-gap: .5rem;
+        padding-bottom: 5rem;
+        padding-top: 7rem;
     }
 
     .gallery-container,
     .gallery-header {
         max-width: 340px;
+        max-height: 260px;
+        padding-right: 1rem;
     }
+
+    .gallery-header {
+        padding-top: 10%;
+    }
+
+    .footer {
+        padding: 1rem 2rem;
+    }
+   
 }
 
 @media only screen and (min-width: 769px) {
 
+    .landing-page {
+        padding: 0 8rem;
+    }
+
+    .header {
+        padding: 1.5rem 9rem;
+        margin-bottom: -15%;
+    }
+
+    .visual {
+        column-gap: 9rem;
+    }
+
+    .hero-container {
+        background-image: url(./assets/image-hero-desktop.webp);
+    }
+
+    .courses-gallery {
+        column-gap: 1.5rem;
+    }
+
+    .gallery-container,
+    .gallery-header {
+        max-width: 350px;
+        max-height: 320px;
+    }
+
+    .footer {
+        padding: 1.5rem 9rem;
+    }
 }
